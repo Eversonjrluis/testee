@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Teste</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      border-bottom: 2px solid #4a90d9;
+      padding-bottom: 10px;
+    }
+    button {
+      background: #4a90d9;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover { background: #357ab8; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th { background: #f0f4f8; }
+    fieldset { border: 1px solid #ccc; border-radius: 4px; }
+    footer { margin-top: 40px; color: #888; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Página de Teste</h1>
+    <p>Um HTML básico com vários elementos de exemplo.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Texto</h2>
+      <p>Este é um parágrafo com <strong>negrito</strong>, <em>itálico</em> e um
+        <a href="https://example.com">link de exemplo</a>.</p>
+      <ul>
+        <li>Item de lista 1</li>
+        <li>Item de lista 2</li>
+        <li>Item de lista 3</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Imagem</h2>
+      <img src="https://via.placeholder.com/300x120" alt="Imagem de exemplo" width="300">
+    </section>
+
+    <section>
+      <h2>Formulário</h2>
+      <form>
+        <fieldset>
+          <legend>Dados</legend>
+          <p>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+          </p>
+          <p>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="voce@exemplo.com">
+          </p>
+          <p>
+            <label for="cor">Cor favorita:</label>
+            <select id="cor" name="cor">
+              <option value="azul">Azul</option>
+              <option value="verde">Verde</option>
+              <option value="vermelho">Vermelho</option>
+            </select>
+          </p>
+          <p>
+            <label><input type="checkbox" name="aceito"> Aceito os termos</label>
+          </p>
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section>
+      <h2>Tabela</h2>
+      <table>
+        <thead>
+          <tr><th>#</th><th>Produto</th><th>Preço</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Café</td><td>R$ 12,00</td></tr>
+          <tr><td>2</td><td>Chá</td><td>R$ 8,00</td></tr>
+          <tr><td>3</td><td>Bolo</td><td>R$ 20,00</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Interação</h2>
+      <button onclick="alert('Olá! Botão clicado.')">Clique aqui</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Página de teste.</p>
+  </footer>
+</body>
+</html>
