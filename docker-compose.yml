@@ -1,9 +1,9 @@
 services:
   web:
-    image: nginx:alpine
+    build: .
+    image: testee-web:latest
     container_name: testee-web
     ports:
       - "8080:80"
-    volumes:
-      - ./index.html:/usr/share/nginx/html/index.html:ro
     restart: unless-stopped
+    pull_policy: build
