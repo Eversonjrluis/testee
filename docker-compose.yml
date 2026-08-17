@@ -4,6 +4,6 @@ services:
     image: testee-web:latest
     container_name: testee-web
     ports:
-      - "8080:80"
+      - "8780:80"
     restart: unless-stopped
     pull_policy: build
